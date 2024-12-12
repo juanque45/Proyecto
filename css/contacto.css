@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente del texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
+    background-color: #f4f4f9; /* Color de fondo del body */
+}
+
+header {
+    background-color: #2E8B57; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 10px 0;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+nav ul li a:hover, nav ul li a:active {
+    background-color: #45a049; /* Color de fondo al pasar el cursor o al hacer clic */
+}
+
+main {
+    flex: 1; /* Permite que el contenido principal crezca y ocupe el espacio disponible */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+form {
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del formulario */
+    width: 100%;
+    max-width: 500px; /* Ancho máximo del formulario */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px; /* Margen alrededor del label */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo del botón de envío */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Color de fondo al pasar el cursor por el botón de envío */
+}
+
+footer {
+    background-color: #2E8B57; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center;
+    padding: 10px 0;
+}

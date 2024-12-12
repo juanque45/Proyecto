@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal del cuerpo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima del cuerpo para cubrir toda la pantalla */
+}
+
+header {
+    background-color: #2E8B57; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none; /* Eliminar el estilo de lista predeterminado */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    background-color: #45a049; /* Color de fondo de los enlaces al pasar el mouse o activarlos */
+    color: #fff;
+}
+
+main {
+    flex: 1; /* Permitir que el contenido principal ocupe el espacio restante */
+    padding: 20px;
+    text-align: center;
+}
+
+.detalle-iniciativa {
+    background-color: #f4f4f9; /* Color de fondo de la sección de detalle */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Bordes redondeados de la sección de detalle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.detalle-iniciativa:hover {
+    transform: scale(1.05); /* Efecto de ampliación al pasar el mouse */
+}
+
+.detalle-iniciativa h2 {
+    color: #4CAF50;
+}
+
+.detalle-iniciativa h3 {
+    color: #388E3C;
+}
+
+.detalle-iniciativa p {
+    color: #333;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.detalle-iniciativa ul {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.detalle-iniciativa img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.detalle-iniciativa iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.detalle-iniciativa a {
+    color: #2E8B57;
+    text-decoration: none;
+}
+
+.detalle-iniciativa a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2E8B57; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
+}
+
+header {
+    background-color: #2E8B57; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 10px 0; /* Relleno superior e inferior */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    background-color: #45a049; /* Color de fondo al pasar el cursor o al hacer clic */
+    color: #fff;
+}
+
+main {
+    flex: 1; /* Permite que el contenido principal crezca y ocupe el espacio disponible */
+    padding: 20px;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.tarjeta {
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    padding: 10px;
+    margin: 10px;
+    display: inline-block; /* Permite que las tarjetas estén en línea una al lado de la otra */
+    width: calc(33.333% - 22px); /* Ancho de la tarjeta ajustado para incluir margen y relleno */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del ancho */
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el cursor */
+}
+
+.tarjeta img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+footer {
+    background-color: #2E8B57; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 10px 0;
+}
