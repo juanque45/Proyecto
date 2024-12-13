@@ -47,30 +47,10 @@ main {
     flex-direction: column; /* Coloca los elementos en una columna */
 }
 
-form {
-    background-color: white; /* Color de fondo del formulario */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados del formulario */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del formulario */
-    width: 100%;
-    max-width: 500px; /* Ancho máximo del formulario */
-}
 
-form label {
-    display: block;
-    margin: 10px 0 5px; /* Margen alrededor del label */
-}
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
 
-form input[type="submit"] {
+ input[type="submit"] {
     background-color: #4CAF50; /* Color de fondo del botón de envío */
     color: white;
     border: none;
@@ -81,10 +61,7 @@ form input[type="submit"] {
     transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
 }
 
-
-
-
-form input[type="submit"]:hover {
+ input[type="submit"]:hover {
     background-color: #45a049; /* Color de fondo al pasar el cursor por el botón de envío */
 }
 

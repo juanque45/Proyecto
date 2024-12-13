@@ -60,6 +60,24 @@ main {
     border-radius: 10px; /* Bordes redondeados para la imagen */
 }
 
+.tarjeta-favorito{
+    border: 2px solid yellow; /* Borde de la tarjeta */
+    padding: 10px;
+    margin: 10px;
+    display: inline-block; /* Permite que las tarjetas estén en línea una al lado de la otra */
+    width: calc(33.333% - 22px); /* Ancho de la tarjeta ajustado para incluir margen y relleno */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del ancho */
+    transition: transform 0.3s;
+}
+
+.tarjeta-favorito:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el cursor */
+}
+
+.tarjeta-favorito img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
 footer {
     background-color: #2E8B57; /* Color de fondo del pie de página */
     color: white; /* Color del texto */
